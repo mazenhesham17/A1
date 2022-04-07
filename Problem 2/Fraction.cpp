@@ -34,7 +34,7 @@ Fraction::Fraction(int x, int y)
 
 ostream& operator<<(ostream &os, const Fraction &ob)
 {
-    os << ob.numerator << '/' << ob.denominator << '\n';
+    os << ob.numerator << '/' << ob.denominator << ' ' ;
     return os;
 }
 
@@ -51,7 +51,7 @@ Fraction Fraction::operator+(const Fraction &ob)
 {
     Fraction temp;
     int common = lcm(denominator, ob.denominator);
-    temp.numerator = common / denominator + common / ob.denominator;
+    temp.numerator = (numerator*common )/denominator + (ob.numerator*common )/ob.denominator ;
     temp.denominator = common;
     temp.simplify();
     return temp;
@@ -61,7 +61,7 @@ Fraction Fraction::operator-(const Fraction &ob)
 {
     Fraction temp;
     int common = lcm(denominator, ob.denominator);
-    temp.numerator = common / denominator - common / ob.denominator;
+    temp.numerator = (numerator*common )/denominator - (ob.numerator*common )/ob.denominator ;
     temp.denominator = common;
     temp.simplify();
     return temp;
