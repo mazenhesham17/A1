@@ -1,65 +1,147 @@
 # include <iostream>
 # include "Fraction.h"
 
-using namespace std ;
+using namespace std;
 
-class  FractionCalculator {
+class FractionCalculator {
 private:
-    Fraction M ;
-    Fraction A ;
-    Fraction B ;
+    Fraction A;
+    Fraction B;
+    Fraction M;
+    bool prev;
 public:
-    void input(){
-        char flag ;
-        cout << "Do you want to use the previous result (y/n) ? " ;
-        cin >> flag ;
-        flag = tolower(flag) ;
-        if ( flag == 'y' ){
-            A = M ;
-        }else if ( flag == 'n' ){
-            cout << "Please enter the first Fraction : " ;
+    FractionCalculator() { prev = false; }
+
+    void use() {
+        cout << "Do you want to use previous result(y/n) ?";
+        char x;
+        cin >> x;
+        x = tolower(x);
+        if (x == 'y') {
+            if (prev) {
+                A = M;
+            } else {
+                throw "there's no previous result.";
+            }
             try {
-                cin >> A ;
-            }catch (const char *msg)
-            {
+                cout << "Please Enter the second fraction : ";
+                cin >> B;
+            } catch (const char *msg) {
                 cout << "There's something went wrong.\n";
                 cout << "Error Message : " << msg << "\n\n";
             }
-        }else{
-            cout << "You Entered wrong value!!\n" ;
-            exit(0) ;
-        }
 
-        cout << "Please enter the Second Fraction : " ;
+        } else if (x == 'n') {
+            try {
+                cout << "Please Enter the first fraction : ";
+                cin >> A;
+            } catch (const char *msg) {
+                cout << "There's something went wrong.\n";
+                cout << "Error Message : " << msg << "\n\n";
+            }
+            try {
+                cout << "Please Enter the second fraction : ";
+                cin >> B;
+            } catch (const char *msg) {
+                cout << "There's something went wrong.\n";
+                cout << "Error Message : " << msg << "\n\n";
+            }
+
+
+        } else {
+            throw "Invalid Input.";
+        }
         try {
-            cin >> B ;
-        }catch (const char *msg)
-        {
+            operation();
+        } catch (const char *msg) {
             cout << "There's something went wrong.\n";
             cout << "Error Message : " << msg << "\n\n";
         }
-        cout << "Please enter the operation you want to preform (+,-,*,/) : " ;
-        char operation ;
-        cin >> operation ;
-        if ( operation == '+' ){
-            M = A + B ;
-        }else if ( operation == '-'){
-            M = A - B ;
-        }else if ( operation == '*'){
-            M = A * B ;
-        }else if ( operation == '/'){
-            M = A / B ;
-        }else{
-            cout << "You Entered wrong value!!\n" ;
-            exit(0) ;
-        }
-        cout << A << operation << ' ' << B << '=' << M << '\n' ;
-
     }
+
+    void operation() {
+        cout << "1. Comparing\n";
+        cout << "2. Arthimitc\n";
+        cout << "Please choose the type of operation you want to use : ";
+        int x;
+        cin >> x;
+        if (x == 1) {
+            try {
+                comparing();
+            } catch (const char *msg) {
+                cout << "There's something went wrong.\n";
+                cout << "Error Message : " << msg << "\n\n";
+            }
+        } else if (x == 2) {
+            try {
+                arithmetic();
+            } catch (const char *msg) {
+                cout << "There's something went wrong.\n";
+                cout << "Error Message : " << msg << "\n\n";
+            }
+        } else {
+            throw "Invalid Input.";
+        }
+    }
+
+    void comparing() {
+        cout << "Please enter one of the comparing operators (<,>,==,<=,>=) : ";
+        string x;
+        cin >> x;
+        bool result = false;
+        if (x == "<") {
+            result = (A < B);
+        } else if (x == ">") {
+            result = (A > B);
+        } else if (x == ">=") {
+            result = (A >= B);
+        } else if (x == "<=") {
+            result = (A <= B);
+        } else if (x == "==") {
+            result = (A == B);
+        } else {
+            throw "Invalid Input.";
+        }
+        cout << A << ' ' << x << ' ' << B << (result ? " is True." : " is False.") << '\n';
+    }
+
+    void arithmetic() {
+        cout << "Please enter one of the arithmetic operators (+,-,*,/) : ";
+        char x;
+        cin >> x;
+        bool result = false;
+        if (x == '+') {
+            M = A + B;
+        } else if (x == '-') {
+            M = A - B;
+        } else if (x == '*') {
+            M = A * B;
+        } else if (x == '/') {
+            M = A / B;
+        } else {
+            throw "Invalid Input.";
+        }
+        cout << A << ' ' << x << ' ' << B << " = " << M << '\n';
+        prev = true;
+    }
+
 };
 
-int main (){
-    FractionCalculator c ;
-    c.input() ;
-    return 0 ;
+int main() {
+    FractionCalculator c;
+    bool flag = true;
+    while (flag) {
+        try {
+            c.use();
+        } catch (const char *msg) {
+            cout << "There's something went wrong.\n";
+            cout << "Error Message : " << msg << "\n\n";
+        }
+        cout << "Do you want to continue using the calculator(y/n) ?";
+        char x;
+        cin >> x;
+        x = tolower(x);
+        flag = (x == 'y');
+    }
+    return 0;
 }
