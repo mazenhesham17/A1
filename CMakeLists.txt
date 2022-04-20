@@ -6,6 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(A1
-        "Problem 3/main.cpp"
-
-        "Problem 3/Matrix.cpp" "Problem 3/Matrix.h")
+        "Problem 9/main.cpp")

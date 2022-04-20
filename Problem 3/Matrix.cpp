@@ -1,3 +1,3 @@
 #include "Matrix.h"
 
-using namespace std ;
+using namespace std;

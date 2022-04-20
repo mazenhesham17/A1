@@ -12,13 +12,15 @@ private:
     int row;
     int col;
 public:
-    int getRow(){
-        return row ;
+    int getRow() {
+        return row;
     }
-    int getCol(){
-        return col ;
+
+    int getCol() {
+        return col;
     }
-    Matrix(int _row = 0 , int _col = 0 ) {
+
+    Matrix(int _row = 0, int _col = 0) {
         row = _row, col = _col;
         mat = new T *[row];
         for (int i = 0; i < row; i++) {
@@ -27,7 +29,7 @@ public:
     }
 
     Matrix(const Matrix<T> &ob) {
-        mat = nullptr ;
+        mat = nullptr;
         row = ob.row, col = ob.col;
         mat = new T *[row];
         for (int i = 0; i < row; i++) {
@@ -124,7 +126,7 @@ public:
             delete[] mat[i];
         }
         delete[] mat;
-        mat = nullptr ;
+        mat = nullptr;
     }
 
 };
