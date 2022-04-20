@@ -12,21 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c15a816-e56b-405b-9e67-d45d20c74f4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Problem 7/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem 8/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem 9/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problem 3/Matrix.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problem 3/Matrix.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem 2/Fraction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 2/Fraction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem 2/Fraction.h" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 2/Fraction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 1/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Problem 2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 2/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem 2/main.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-7495348bd3b26cc7bdc0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-07T04-14-58-0722.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-A1-Debug-37b78c04478deb690dea.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 3/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 3/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 4/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 4/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 7/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 7/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 8/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 8/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 9/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 9/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/A1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/A1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_2/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_2/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_3/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_3/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
@@ -41,6 +42,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5847c4f4-478d-450b-a712-adbaa1fdaa97" />
+        <option name="url" value="https://github.com/mazenhesham17/A1.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,11 +75,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="A1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="A1" TARGET_NAME="A1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="A1" RUN_TARGET_NAME="A1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -92,19 +96,54 @@
       <workItem from="1650144708524" duration="341000" />
       <workItem from="1650148828580" duration="4893000" />
       <workItem from="1650155572732" duration="39000" />
-      <workItem from="1650221084595" duration="2203000" />
+      <workItem from="1650221084595" duration="2709000" />
+      <workItem from="1650295092812" duration="2955000" />
+      <workItem from="1650311331759" duration="8000" />
+      <workItem from="1650421495085" duration="6244000" />
     </task>
+    <task id="LOCAL-00001" summary="Problem 1&#10;Problem 2">
+      <created>1650223330590</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650223330590</updated>
+    </task>
+    <task id="LOCAL-00002" summary="excel">
+      <created>1650295711304</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650295711304</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Problem 1&#10;Problem 2" />
+    <MESSAGE value="excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="excel" />
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Problem 3/Matrix.h</url>
+          <line>45</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Problem 3/Matrix.h</url>
+          <line>62</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="arr[0]" language="ObjectiveC" />
-        <watch expression="arr[1]" language="ObjectiveC" />
-        <watch expression="*arr" language="ObjectiveC" />
+        <watch expression="mat[i][j]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

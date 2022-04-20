@@ -128,11 +128,11 @@ public:
 };
 
 int main() {
-    FractionCalculator c;
+    FractionCalculator calculator;
     bool flag = true;
     while (flag) {
         try {
-            c.use();
+            calculator.use();
         } catch (const char *msg) {
             cout << "There's something went wrong.\n";
             cout << "Error Message : " << msg << "\n\n";

@@ -1,106 +1,122 @@
 # include <iostream>
+# include "Matrix.h"
 
-using namespace std ;
+using namespace std;
 
-template <class T >
-class Matrix{
-    private:
-    T **mat ;
-    int row ;
-    int col ;
-    public:
-    Matrix( int _row = 0 , int _col = 0 ){
-        row = _row , col = _col ;
-        mat = new T*[row] ;
-        for ( int i = 0 ; i < row ; i++ ){
-            mat[i] = new T[col] ;
-        }
+
+class MatrixCalculator {
+public:
+    void showMenu() {
+        cout << "Welcome to DS Matrix Calculator.\n";
+        cout << "1. Perform Addition\n";
+        cout << "2. Perform Subtraction\n";
+        cout << "3. Perform Multiplication\n";
+        cout << "4. Matrix Transpose\n";
+        cout << "Please enter number to choose from the menu : ";
+        int x;
+        cin >> x;
+        input(x);
     }
-    Matrix( const Matrix<T> &ob ){
-        row = ob.row , col = ob.col ;
-        mat = new T*[row] ;
-        for ( int i = 0 ; i < row ; i++ ){
-            mat[i] = new T[col] ;
-        }
-        for (int i = 0; i < row; ++i) {
-            for (int j = 0; j < col; ++j) {
-                mat[i][j] = ob.mat[i][j] ;
+
+
+    void input(int x) {
+        if (x == 1 || x == 2 || x == 3) {
+            cout << "Please Enter the First Matrix dimensions (n,m): ";
+            int n, m;
+            cin >> n >> m;
+            Matrix<int> A(n, m);
+            cout << "Please Enter the First Matrix :\n";
+            cin >> A;
+            cout << "Please Enter the Second Matrix dimensions (n,m): ";
+            cin >> n >> m;
+            Matrix<int> B(n, m);
+            cout << "Please Enter the Second Matrix :\n";
+            cin >> B;
+            switch (x) {
+                case 1:
+                    addition(A, B);
+                    break;
+                case 2:
+                    subtraction(A, B);
+                    break;
+                case 3:
+                    multiplication(A, B);
+                    break;
+            }
+        } else {
+            if (x == 4) {
+                cout << "Please Enter the Matrix dimensions (n,m): ";
+                int n, m;
+                cin >> n >> m;
+                Matrix<int> A(n, m);
+                cout << "Please Enter the Matrix :\n";
+                cin >> A;
+                transpose(A);
+            } else {
+                throw "Invalid Input.\n";
             }
         }
     }
-    friend ostream& operator<< ( ostream& os , const Matrix<T> &ob ){
-        for ( int i = 0 ; i < ob.row ; i++ ){
-            for ( int j = 0 ; j < ob.col ; j++ ){
-                os << ob.mat[i][j] << ' ' ; 
-            }
-            os << '\n' ;
-        }
-        return os ;
-    }
-    friend istream& operator>> ( istream& is , Matrix<T> &ob ){
-        for ( int i = 0 ; i < ob.row ; i++ ){
-            for ( int j = 0 ; j < ob.col ; j++ ){
-                is >> ob.mat[i][j] ;
-            }
-        }
-        return is ;
-    }
-    Matrix<T> operator + ( const Matrix<T>& ob ){
-        if ( ob.row == row && ob.col == col ){
-            Matrix<T> temp(row,col) ;
-            for (int i = 0; i < row; ++i) {
-                for (int j = 0; j < col; ++j) {
-                    temp.mat[i][j] = mat[i][j] + ob.mat[i][j] ;
-                }
-            }
-            return temp ;
+
+    void addition(Matrix<int> &A, Matrix<int> &B) {
+        try {
+            cout << "The result is \n";
+            cout << A + B;
+        } catch (const char *msg) {
+            cout << "There's something went wrong.\n";
+            cout << "Error Message : " << msg << "\n\n";
         }
     }
-    Matrix<T> operator - ( const Matrix<T>& ob ){
-        if ( ob.row == row && ob.col == col ){
-            Matrix<T> temp(row,col) ;
-            for (int i = 0; i < row; ++i) {
-                for (int j = 0; j < col; ++j) {
-                    temp.mat[i][j] = mat[i][j] - ob.mat[i][j] ;
-                }
-            }
-            return temp ;
+
+    void subtraction(Matrix<int> &A, Matrix<int> &B) {
+        try {
+            cout << "The result is \n";
+            cout << A - B;
+        } catch (const char *msg) {
+            cout << "There's something went wrong.\n";
+            cout << "Error Message : " << msg << "\n\n";
         }
     }
-    Matrix<T> operator * ( const Matrix<T>& ob ){
-        if ( col == ob.row ){
-            Matrix<T> temp(row,ob.col) ;
-            int n = row , m = ob.col ;
-            for (int i = 0; i < n; ++i) {
-                for (int j = 0; j < m; ++j) {
-                    temp.mat[i][j] = 0 ;
-                    for (int k = 0; k < col; ++k) {
-                        temp.mat[i][j] += mat[i][k]*ob.mat[k][j] ;
-                    }
-                }
-            }
-            return temp ;
+
+    void multiplication(Matrix<int> &A, Matrix<int> &B) {
+        try {
+            cout << "The result is \n";
+            cout << A * B;
+        } catch (const char *msg) {
+            cout << "There's something went wrong.\n";
+            cout << "Error Message : " << msg << "\n\n";
         }
     }
-    ~Matrix(){
-        for ( int i = 0 ; i < row ; i++ ){
-            delete [] mat[i] ;
+
+    void transpose(Matrix<int> &M) {
+        try {
+            cout << "The result is \n";
+            cout << M.transpose();
+        } catch (const char *msg) {
+            cout << "There's something went wrong.\n";
+            cout << "Error Message : " << msg << "\n\n";
         }
-        delete [] mat ;
     }
+
 };
 
-int main(){
-    Matrix<int> mat1(3,2) , mat2(2,3) ;
-    cin >> mat1 >> mat2 ;
-    cout << mat1 * mat2 << '\n' ;
-    return 0 ;
-}
 
-/*
-1 2 3
-4 5 6
-1 2
-3 4
-5 6
- * */
+int main() {
+
+    bool flag = true;
+    while (flag) {
+        MatrixCalculator calculator;
+        try {
+            calculator.showMenu();
+        } catch (const char *msg) {
+            cout << "There's something went wrong.\n";
+            cout << "Error Message : " << msg << "\n\n";
+        }
+        cout << "Do you want to continue using the calculator(y/n) ?";
+        char x;
+        cin >> x;
+        x = tolower(x);
+        flag = (x == 'y');
+    }
+    return 0;
+}

@@ -3,33 +3,35 @@
 #include <algorithm>
 #include <chrono>
 
-using namespace std ;
+using namespace std;
 
-class Testbed{
+class Testbed {
 public:
-    vector<int> generateRandomList( int min , int max , int size ){
-        vector<int> random(size) ;
-        srand(time(0)) ;
+    vector<int> generateRandomList(int min, int max, int size) {
+        vector<int> random(size);
+        srand(time(0));
         for (int i = 0; i < size; ++i) {
-            random[i] = min + rand()%(max-min+1) ;
+            random[i] = min + rand() % (max - min + 1);
         }
-        return random ;
+        return random;
     }
-    vector<int> generateReverseOrderedList( int min , int max , int size ){
-        vector<int> random = generateRandomList(min,max,size);
-        sort(random.begin(),random.end(),greater<>()) ;
-        return random ;
+
+    vector<int> generateReverseOrderedList(int min, int max, int size) {
+        vector<int> random = generateRandomList(min, max, size);
+        sort(random.begin(), random.end(), greater<>());
+        return random;
     }
-    double runOnce(){
+
+    double runOnce() {
 
     }
 };
 
-int main(){
-    Testbed t1 ;
-    vector<int> v = t1.generateReverseOrderedList(2,10,10) ;
-    for ( auto &it : v ){
-        cout << it << ' ' ;
+int main() {
+    Testbed t1;
+    vector<int> v = t1.generateReverseOrderedList(2, 10, 10);
+    for (auto &it: v) {
+        cout << it << ' ';
     }
-    return 0 ;
+    return 0;
 }
