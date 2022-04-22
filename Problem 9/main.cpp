@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <chrono>
-
+#include <iomanip>
 using namespace std;
 
 
@@ -39,7 +39,7 @@ private:
         swap(v[mid],v[r]) ;
     }
     int quickPart(vector<int> &v, int l, int r) {
-        medianofThree(v,l,r) ;
+        // medianofThree(v,l,r) ;
         int pivot = v[r] , i = l - 1 ;
         for (int j = l; j < r; ++j) {
             if ( v[j] < pivot ){
@@ -91,14 +91,16 @@ public:
         return diff;
     }
 
-    double runAverage( Sorter *sorter , bool type , int min , int max, int size, int sets_num ){
+    double runAverage( Sorter *sorter , int type , int min , int max, int size, int sets_num ){
         double total_time = 0 ;
         for (int i = 0; i < sets_num; ++i) {
             vector<int> random ;
             if ( type == 0 ){
                 random = generateOrderedList(min,max,size) ;
-            }else{
+            }else if ( type == 1 ){
                 random = generateReverseOrderedList(min,max,size) ;
+            }else{
+                random = generateRandomList(min,max,size) ;
             }
             auto start = chrono::steady_clock::now();
             sorter->Sort(random,0,size-1) ;
@@ -107,13 +109,25 @@ public:
         }
         return total_time/sets_num ;
     }
+
+    vector<pair<int,double>> runExperiment ( Sorter *sorter , int type , int min , int max, int min_val , int max_val , int sets_num , int step ){
+        vector<pair<int,double>> records ;
+        for (int i = min_val ; i <= max_val ; i += step ) {
+            records.push_back({i, runAverage(sorter,type,min,max,i,sets_num)}) ;
+        }
+        return records ;
+    }
 };
 
 int main() {
-    Testbed t1;
-    vector<int> v = t1.generateReverseOrderedList(2, 10, 10) ;
+    Testbed testbed ;
     Sorter *sorter ;
-    sorter = new quickSorter ;
-    cout << t1.runAverage(sorter,1,1,1000,10000,10) << " ms.\n" ;
+    sorter = new selectionSorter ;
+    auto records = testbed.runExperiment(sorter,2,10,10000000,1000,10000,15,1000) ;
+    cout << "Complexity Analysis for Selection Sort\n" ;
+    cout << "Input Size  Execution time\n" ;
+    for ( auto &it : records ){
+        cout << setw(10) << it.first << "  " << fixed << setprecision(4) << it.second << " ms.\n" ;
+    }
     return 0;
 }
