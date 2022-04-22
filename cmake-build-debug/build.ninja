@@ -49,12 +49,12 @@ cmake_ninja_workdir = D$:/Programming/A1/cmake-build-debug/
 
 build cmake_object_order_depends_target_A1: phony || CMakeFiles/A1.dir
 
-build CMakeFiles/A1.dir/Problem_9/main.cpp.obj: CXX_COMPILER__A1_Debug D$:/Programming/A1/Problem$ 9/main.cpp || cmake_object_order_depends_target_A1
-  DEP_FILE = CMakeFiles\A1.dir\Problem_9\main.cpp.obj.d
+build CMakeFiles/A1.dir/Problem_5/main.cpp.obj: CXX_COMPILER__A1_Debug D$:/Programming/A1/Problem$ 5/main.cpp || cmake_object_order_depends_target_A1
+  DEP_FILE = CMakeFiles\A1.dir\Problem_5\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
   INCLUDES = -ID:/Programming/A1/.
   OBJECT_DIR = CMakeFiles\A1.dir
-  OBJECT_FILE_DIR = CMakeFiles\A1.dir\Problem_9
+  OBJECT_FILE_DIR = CMakeFiles\A1.dir\Problem_5
 
 
 # =============================================================================
@@ -64,7 +64,7 @@ build CMakeFiles/A1.dir/Problem_9/main.cpp.obj: CXX_COMPILER__A1_Debug D$:/Progr
 #############################################
 # Link the executable A1.exe
 
-build A1.exe: CXX_EXECUTABLE_LINKER__A1_Debug CMakeFiles/A1.dir/Problem_9/main.cpp.obj
+build A1.exe: CXX_EXECUTABLE_LINKER__A1_Debug CMakeFiles/A1.dir/Problem_5/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\A1.dir

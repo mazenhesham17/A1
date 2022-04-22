@@ -46,8 +46,6 @@ public:
                 cout << "There's something went wrong.\n";
                 cout << "Error Message : " << msg << "\n\n";
             }
-
-
         } else {
             throw "Invalid Input.";
         }

@@ -12,14 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c15a816-e56b-405b-9e67-d45d20c74f4b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Problem 5/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem 8/Performance.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 8/Performance.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem 9/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 9/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 1/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 1/main.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 2/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-00b0ce81a7c9eabb5c47.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-20T05-09-07-0701.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-A1-Debug-0a75c433bb83fac567ce.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/A1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/A1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_9/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_9/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_1/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_1/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +76,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,6 +108,10 @@
       <workItem from="1650587136959" duration="1855000" />
       <workItem from="1650637815608" duration="14000" />
       <workItem from="1650661139357" duration="643000" />
+      <workItem from="1650662227341" duration="1960000" />
+      <workItem from="1650664221300" duration="82000" />
+      <workItem from="1650664450791" duration="833000" />
+      <workItem from="1650665975095" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 1&#10;Problem 2">
       <created>1650223330590</created>
@@ -145,6 +160,16 @@
           <url>file://$PROJECT_DIR$/Problem 6/main.cpp</url>
           <line>55</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Problem 5/main.cpp</url>
+          <line>11</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Problem 1/main.cpp</url>
+          <line>165</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
