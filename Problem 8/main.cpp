@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 template<class T>
 void insertionSort(vector<T> &v) {
     int n = v.size();
@@ -18,7 +17,6 @@ void insertionSort(vector<T> &v) {
         v[j] = temp;
     }
 }
-
 
 template<class T>
 void binaryInsertionSort(vector<T> &v) {
@@ -57,7 +55,7 @@ double execution_time(vector<T> &v, void (*func)(vector<T> &)) {
 
 int main() {
     srand(time(0));
-    int n = 100000;
+    int n = 10000;
     vector<int> v(n), m;
     generate(v.begin(), v.end(), rand);
     m = v;

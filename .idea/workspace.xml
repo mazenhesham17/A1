@@ -12,13 +12,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c15a816-e56b-405b-9e67-d45d20c74f4b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Problem 2/FractionCalculator.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problem 2/FractionCalculator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problem 3/MatrixCalculator.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problem 3/MatrixCalculator.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem 10/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 10/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 1/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 1/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 10/.idea/Problem 10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 2/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 3/Matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 3/Matrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 3/Matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 3/Matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 3/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 3/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 3/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 4/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 5/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 5/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 5/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 5/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 8/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 8/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 9/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 9/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-4cc87d408d722ed357de.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-26T04-10-17-0242.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-A1-Debug-c689611e3c189a695981.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/A1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/A1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_10/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_10/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_2/Fraction.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_2/Fraction.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_2/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_2/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_3/Matrix.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_3/Matrix.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_3/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_3/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_4/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_4/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_5/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_5/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_6/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_6/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_8/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_8/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_9/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A1.dir/Problem_9/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +97,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="A1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="A1" TARGET_NAME="A1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="A1" RUN_TARGET_NAME="A1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -109,6 +147,7 @@
       <workItem from="1651022534247" duration="951000" />
       <workItem from="1651024702531" duration="9000" />
       <workItem from="1651025497054" duration="3506000" />
+      <workItem from="1651030724364" duration="3945000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 1&#10;Problem 2">
       <created>1650223330590</created>
@@ -139,16 +178,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Problem 3/Matrix.h</url>
-          <line>47</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Problem 3/Matrix.h</url>
-          <line>64</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Problem 6/main.cpp</url>
           <line>70</line>
           <option name="timeStamp" value="14" />
@@ -162,11 +191,6 @@
           <url>file://$PROJECT_DIR$/Problem 5/main.cpp</url>
           <line>11</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Problem 1/main.cpp</url>
-          <line>165</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
